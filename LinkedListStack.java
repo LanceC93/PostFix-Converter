@@ -1,12 +1,11 @@
-import net.datastructures.SinglyLinkedList;
-
 //Name: Lance Cross
 //Due Date: 2/26/23
 //represents a stack using a singly linked list
-public class LinkedListStack {
+
+public class LinkedListStack<E> {
     
     //holds the stack
-    private SinglyLinkedList<> stack;
+    private SinglyLinkedList<E> stack;
 
     /**constructs a new object with an empty list */
     public LinkedListStack() {
@@ -30,16 +29,12 @@ public class LinkedListStack {
 
 
     /**
-     * removes top element from stack and returns its vlaue
+     * removes top element from stack and returns its value
+     * returns null if stack is empty
      * @return value in the top node
      */
     public E pop() {
-        E temp = top();
-        //only removes first element if the stack is not empty
-        if(temp != null) {
-            stack.removeFirst();
-        }
-        return temp;
+        return stack.removeFirst();;
     }
 
     /**
