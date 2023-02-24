@@ -13,6 +13,14 @@ public class LinkedListStack<E> {
     }
 
     /**
+     * gives the number of elements in stack
+     * @return size of the stack
+     */
+    public int size() {
+        return stack.size();
+    }
+
+    /**
      * creates a string reprentation of the stack with the first element as the top
      */
     public String toString() {
@@ -34,7 +42,7 @@ public class LinkedListStack<E> {
      * @return value in the top node
      */
     public E pop() {
-        return stack.removeFirst();;
+        return stack.removeFirst();
     }
 
     /**
