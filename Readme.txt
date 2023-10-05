@@ -1,5 +1,7 @@
-Lance Cross lac30869@gmail.com
+This was a project for my Data Structures class at UGA.
 
-I used the Singly Linked List source code provided from eLC.
+This program can convert infix expressions to postfix expressions and evaluate postfix expressions.
 
-It is assumed that all input is given with a space after each operator and number
+I used a provided Singly Linked List class.
+
+(It is assumed that all input is given with a space after each operator and number)
